@@ -157,7 +157,7 @@ MAIN
       rgba(240, 237, 237, 0.2)
     ),
     url("./Images/welcomeImg.jpg") center/cover no-repeat;
-  height: 70vh;
+  height: 80vh;
   text-align: center;
   display: flex;
   align-items: center;
