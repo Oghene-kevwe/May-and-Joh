@@ -366,7 +366,7 @@ SECTION-5
   background: url("./Images/img8.jpg") center/cover no-repeat;
   height: 41vw;
   width: 41vw;
-  margin-right: -15vw;
+  margin-right: -16vw;
 }
 
 /* 
@@ -378,8 +378,7 @@ SECTION-6
 }
 
 .last-cont {
-  margin-top: 4vw;
-  margin-bottom: 8vw;
+  margin: 4vw auto 8vw auto;
 }
 
 .last-img {
@@ -570,9 +569,7 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 400px) {
-  body {
-    padding: 0;
-  }
+  
   .bold,
   .txt {
     font-size: 80%;
@@ -606,8 +603,8 @@ MEDIA QUERIES
     font-size: 80%;
   }
   .form {
-    width: 80vw;
     flex-flow: column nowrap;
+    gap:0.5rem;
   }
   #email {
     flex: none;
