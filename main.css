@@ -407,6 +407,9 @@ SECTION-6
   color: var(--primaryColor);
 }
 
+.builtby{
+  font-weight: 600;
+}
 /* 
 #############
 FOOTER
