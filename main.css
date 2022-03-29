@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Hind:400|Expletus+Sans:400");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400|Nunito+Sans:400");
 
 html {
   font-size: 100%;
@@ -6,7 +6,7 @@ html {
 
 * {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -21,7 +21,6 @@ html {
 }
 
 p {
-  margin-bottom: 1rem;
   font-size: 0.9rem;
 }
 
@@ -30,13 +29,12 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Expletus Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
   line-height: 1.3;
 }
 
 h1 {
-  margin-top: 0;
   font-size: 3.052rem;
   margin-bottom: 50px;
 }
@@ -57,8 +55,7 @@ h5 {
   font-size: 1.25rem;
 }
 
-small,
-.text_small {
+.small {
   font-size: 0.8rem;
 }
 
@@ -79,7 +76,7 @@ ul {
 }
 body {
   background: var(--white);
-  font-family: "Hind", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   line-height: 1.75;
   color: var(--black);
@@ -119,6 +116,7 @@ NAV-BAR
 }
 .nav-logo img {
   width: 100px;
+  text-align: right;
 }
 
 .nav-links {
@@ -148,7 +146,7 @@ MAIN
 
 .main {
   padding: 0 4vw;
-  margin: 0 auto;
+  margin: 0 3vw;
 }
 
 .main-img {
@@ -158,6 +156,7 @@ MAIN
     ),
     url("./Images/welcomeImg.jpg") center/cover no-repeat;
   height: 80vh;
+  width: 85vw;
   text-align: center;
   display: flex;
   align-items: center;
@@ -182,59 +181,64 @@ MAIN
 
 .txt {
   margin: 0 auto;
-  margin-bottom: 4vw;
+  margin-bottom: 1rem;
 }
 
 .section1,
 .section2,
 .section3,
 .section4,
-.section5 {
+.section5,
+.section6 {
   margin-bottom: 8vw;
-}
-
-.section1 {
   margin-top: 8vw;
+  /* border:2px solid blue; */
 }
 
 .section1 span {
   color: var(--primaryColor);
 }
+
 .bold {
-  font-weight: bold;
   font-size: 1rem;
 }
 
+.collage,
+.collage2,
+.collage3 {
+  margin: 10vw 0;
+}
 /*#############
  Section 2 
  #############*/
-.section2 {
-  padding-bottom: 4vw;
-  padding-top: 4vw;
+
+.collage {
   position: relative;
 }
-.yello-bgd {
+.collage-bgd {
   background: rgba(200, 89, 105, 0.6);
   height: 58vw;
   width: 58vw;
-  position: absolute;
-  top: 0;
-  left: -8vw;
+  position: relative;
   z-index: -1;
+  margin-left: -7.2vw;
 }
 
-.yello-bgd-cont {
+.collage-cont {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 4vw;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
-.yello-bgd-img {
+.img1 {
   background: url("./Images/img1.jpg") center/cover no-repeat;
   height: 20vw;
   width: 30vw;
 }
-.yello-bgd-img2 {
+.img2 {
   background: url("./Images/img2.jpg") center/cover no-repeat;
   height: 41vw;
   width: 41vw;
@@ -245,21 +249,19 @@ MAIN
 SECTION-3
 ############# */
 
-.section3 {
-  margin-top: 4rem;
-}
 .embed {
+  height: 45vw;
+  width: 75vw;
   margin: 4rem auto;
-  height: 50vw;
 }
 iframe {
+  display: block;
   width: 100%;
   height: 100%;
-  margin-bottom: 0.2rem;
   border: none;
 }
-.iframetxt {
-  font-weight: 600;
+.embed p {
+  margin-top: 0.5rem;
 }
 
 /* 
@@ -267,55 +269,52 @@ iframe {
 SECTION-4
 ############# */
 
-.section4 {
-  margin-top: 5rem;
-}
-
-.collage {
+.collage2 {
   position: relative;
-  margin-top: 4vw;
-  margin-bottom: 4vw;
 }
 .bgd {
   background: rgba(16, 206, 88, 0.6);
   height: 75vw;
   width: 58vw;
   z-index: -1;
-  position: absolute;
-  top: 0;
-  right: -8vw;
+  position: relative;
+  margin-left: auto;
+  margin-right: -7.2vw;
 }
 
-.imgs-container {
-  height: 75vw;
+.collage2-container {
+  height: 100%;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
   gap: 4vw;
+  position: absolute;
+  top: 0;
 }
 
-.bgd-img1 {
+.img3 {
   background: url("./Images/img3.jpg") center/cover no-repeat;
   height: 45vw;
   width: 42vw;
-  margin-left: -5vw;
-}
-.bgd-img2 {
-  background: url("./Images/img4.jpg") center/cover no-repeat;
-  height: 25vw;
-  width: 35vw;
 }
 
 .bgd-container {
   height: 80%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
   justify-content: space-around;
   gap: 4vw;
-  width: 30vw;
 }
-.bgd-img3 {
+
+.img4 {
+  background: url("./Images/img4.jpg") center/cover no-repeat;
+  height: 25vw;
+  width: 35vw;
+}
+
+.img5 {
   background: url("./Images/img5.jpg") center/cover no-repeat;
   height: 25vw;
   width: 35vw;
@@ -333,92 +332,78 @@ SECTION-5
   margin: 8vw auto;
 }
 
-.collage2 {
+.collage3 {
   position: relative;
-  margin: 8vw auto 0 auto;
-  height: 60vw;
-  width: 70vw;
 }
-.collage2-bgd {
+.collage3-bgd {
   background: rgba(240, 191, 17, 0.6);
   height: 60vw;
   width: 65vw;
-  position: absolute;
+  margin: 0 auto;
+  position: relative;
   z-index: -1;
 }
 
-.collage2-cont {
+.collage3-cont {
+  position: absolute;
   display: flex;
+  top: 0;
   height: 100%;
-  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-.img4 {
+.img7 {
   background: url("./Images/img7.jpg") center/cover no-repeat;
   height: 30vw;
   width: 35vw;
-  margin-left: -7vw;
 }
 
-.img5 {
+.img8 {
   background: url("./Images/img8.jpg") center/cover no-repeat;
   height: 41vw;
   width: 41vw;
-  margin-right: -16vw;
+  margin-right: -7.2vw;
 }
 
 /* 
 #############
 SECTION-6
 ############# */
-.section6 {
-  margin-bottom: 0;
-}
-
-.last-cont {
-  margin: 4vw auto 8vw auto;
-}
 
 .last-img {
   background: url("./Images/img9.jpg") center/cover no-repeat;
-  height: 70vw;
+  height: 50vw;
 }
 .last-bgd {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  flex-flow: column wrap;
   background: #b1c5ff;
-  padding: 3vw;
-  height: 40vh;
+  padding: 5vw;
+  height: auto;
 }
 
 .last-bgd h5 {
-  margin-bottom: 3vw;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.last-bgd h5,
-.last-link {
-  width: 90%;
-}
 .last-link a {
   color: var(--primaryColor);
 }
 
-.builtby {
-  font-weight: 600;
-}
 /* 
 #############
 FOOTER
 ############# */
 
 .footer {
-  margin: 0 auto;
-  padding: 4vw;
+  margin: 0 3vw;
+  padding: 0 4vw;
   padding-bottom: 0;
+  font-size: 85%;
+  color: var(--black);
 }
 .footer-seperator {
   margin-top: 2vw;
@@ -426,7 +411,9 @@ FOOTER
   height: 1rem;
   width: 100vw;
 }
-
+.footer-logo {
+  margin-top: 3vw;
+}
 .form {
   display: flex;
   flex-flow: row nowrap;
@@ -464,7 +451,6 @@ FOOTER
 }
 .socials-list1 a {
   color: var(--black);
-  font-size: 0.9rem;
 }
 .social-icon {
   display: inline-block;
@@ -495,7 +481,6 @@ FOOTER
 }
 .ext-list1 li a {
   display: inline-block;
-  font-size: 0.9rem;
   color: var(--black);
 }
 #header {
@@ -505,18 +490,27 @@ FOOTER
 
 .ext-list2 li a {
   display: inline-block;
-  font-size: 0.8rem;
   color: var(--black);
 }
 
-.footer > p {
-  margin-top: 0.5rem;
+.ext-list2 {
+  margin: 1rem 0;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top a {
+  font-size: 0.8rem;
+  color: var(--secondaryColor);
+}
+
+.builtby {
+  font-weight: 600;
   font-size: 0.8rem;
 }
 
-.form-container p {
-  font-size: 0.9rem;
-}
 /*##########
 MEDIA QUERIES
 ##############*/
@@ -526,14 +520,8 @@ MEDIA QUERIES
     width: 70vw;
     height: 40vw;
   }
-  .bold {
-    font-size: 1.2rem;
-  }
   .txt {
-    width: 70vw;
-  }
-  p {
-    font-size: 1rem;
+    width: 65vw;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -543,14 +531,20 @@ MEDIA QUERIES
   .socials {
     order: 1;
   }
-  .ext-list1 {
+  .dist {
+    order: 4;
+  }
+  .edu {
+    order: 2;
+  }
+  .comm {
     order: 3;
   }
   .final {
-    order: 2;
+    order: 6;
   }
   .form-container {
-    order: 4;
+    order: 3;
   }
   #header {
     display: flex;
@@ -566,23 +560,32 @@ MEDIA QUERIES
   .ext-list2 {
     display: flex;
     gap: 1rem;
+    font-size: 90%;
+  }
+  .top a {
+    font-size: 1rem;
+  }
+  .footer {
+    font-size: 100%;
+  }
+  .footer p {
+    font-size: 100%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .bold,
-  .txt {
-    font-size: 80%;
-  }
-
   .nav-links {
     padding-bottom: 0;
   }
-  .nav-links a {
-    font-size: 80%;
-  }
+
   .nav-logo img {
     width: 80px;
+  }
+  .footer {
+    font-size: 80%;
+  }
+  .footer p {
+    font-size: 0.8rem;
   }
   .footer-logo img {
     width: 90px;
@@ -593,12 +596,6 @@ MEDIA QUERIES
   .nav-logo {
     width: 90px;
   }
-  .socials-list1 a {
-    font-size: 80%;
-  }
-  .form-container p {
-    font-size: 80%;
-  }
   .form {
     flex-flow: column nowrap;
     gap: 0.5rem;
@@ -608,17 +605,5 @@ MEDIA QUERIES
   }
   .social-icon {
     font-size: 1.5rem;
-  }
-  #header {
-    font-size: 80%;
-  }
-  .ext-list1 li a {
-    font-size: 80%;
-  }
-  .dropdown {
-    font-size: 80%;
-  }
-  .last-link a {
-    font-size: 80%;
   }
 }
