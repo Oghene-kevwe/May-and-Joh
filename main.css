@@ -6,7 +6,7 @@ html {
 
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -407,7 +407,7 @@ SECTION-6
   color: var(--primaryColor);
 }
 
-.builtby{
+.builtby {
   font-weight: 600;
 }
 /* 
@@ -416,7 +416,7 @@ FOOTER
 ############# */
 
 .footer {
-   margin: 0 auto;
+  margin: 0 auto;
   padding: 4vw;
   padding-bottom: 0;
 }
@@ -514,9 +514,6 @@ FOOTER
   font-size: 0.8rem;
 }
 
-.footer div {
-  /* margin-bottom: 3vw; */
-}
 .form-container p {
   font-size: 0.9rem;
 }
@@ -573,12 +570,11 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 400px) {
-  
   .bold,
   .txt {
     font-size: 80%;
   }
-  
+
   .nav-links {
     padding-bottom: 0;
   }
@@ -605,7 +601,7 @@ MEDIA QUERIES
   }
   .form {
     flex-flow: column nowrap;
-    gap:0.5rem;
+    gap: 0.5rem;
   }
   #email {
     flex: none;
